@@ -16,6 +16,7 @@
   height: 100px;
   display: flex;
   align-items: center;
+  
   &__box{
     width: 260px;
     height: 20px;
@@ -25,9 +26,11 @@
     justify-content: space-between;
     align-items: center;
     color: white;
+
     &__user-name{
       font-size: 16px;
     }
+
     &__menu{
       height: 100%;
       width: 60px;
@@ -64,6 +67,7 @@
     font-size: 11px;
   }
 }
+
 
 //----------------メインコンテンツの装飾---------------- 
 .chat-main{
