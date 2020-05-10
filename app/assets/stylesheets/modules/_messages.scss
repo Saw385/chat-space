@@ -16,6 +16,7 @@
   height: 100px;
   display: flex;
   align-items: center;
+
   &__box{
     width: 260px;
     height: 20px;
@@ -25,9 +26,11 @@
     justify-content: space-between;
     align-items: center;
     color: white;
+
     &__user-name{
       font-size: 16px;
     }
+
     &__menu{
       height: 100%;
       width: 60px;
@@ -47,6 +50,7 @@
   height: 100%;
   padding: 20px 20px 20px;
   color: #ffffff;
+
   &__list{
     text-decoration: none;
     color: #ffffff;
@@ -56,12 +60,19 @@
   margin-bottom: 40px;
   padding-top: 20px;
   text-align: left;
-  &__group-name{
-    font-size: 15px;
-    margin-bottom: 5px;
-  }
-  &__latest-message{
-    font-size: 11px;
+  
+  &__link{
+    text-decoration: none;
+    color: #ffffff;
+    
+    &__group-name{
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+    
+    &__latest-message{
+      font-size: 11px;
+    }
   }
 }
 
@@ -77,19 +88,24 @@
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
+  border: 1px #eee solid;
+  
   &__left-box{
     margin-top: 35px;
+    
     &__current-group{
       margin-bottom: 15px;
       font-size: 20px;
       color: #333333;
     }
+    
     &__member-list{
       font-size: 12px;
       color: #999999;
       display: flex;
     }
   }
+  
   &__edit-btn{
     height: 40px;
     width: 72px;
@@ -114,14 +130,21 @@
   width: 100%;
   height: 90px;
   padding: 20px 40px;
-  .new_message{
-    display: flex;
+  &__mask{
+    position: absolute;
+    top: 10px;
+    right: 125px;
   }
+}
+
+.new_message{
+  display: flex;
+  position: relative;
 }
 .input-box{
   display: flex;
-  position: relative;
   width: 100%;
+  
   &__text{
     height: 50px;
     width: 100%;
@@ -129,11 +152,10 @@
     border-style: none;
     padding: 0 40px 0 10px;
   }
+  
   &__image{
-    position: absolute;
-    top: 10px;
-    right: 10px;
     font-size: 1.3rem;
+    
     &__file{
       display: none;
     }
