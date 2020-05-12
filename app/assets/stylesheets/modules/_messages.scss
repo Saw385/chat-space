@@ -120,10 +120,11 @@
     text-decoration: none;
   }
 }
-.massages{
+.messages{
   background-color: #fafafa;
   width: 100%;
   height: calc(100vh - 190px);
+  overflow: scroll;
 }
 .form{
   background-color: #d2d2d2;
