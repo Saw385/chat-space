@@ -83,8 +83,7 @@ $(function () {
           $.each(messages, function(i, message) {
           insertHTML += buildHTML(message)
           });
-          $(".message").append(insertHTML);
-          $(".message").animate({ scrollTop: $(".message")[0].scrollHeight });
+          $(".messages").append(insertHTML);
           $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
         }
       })
@@ -93,6 +92,6 @@ $(function () {
       });
     };
     if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-      setInterval(reloadMessages, 7000);
+      setInterval(reloadMessages, 5000);
     }
 });
